@@ -9,7 +9,15 @@
         <CheckBox x:Name="subscribed" />
         <Button Text="Add to Database"
                 Clicked="OnButtonClicked" />
-        <CollectionView x:Name="collectionView">
+        <Button Text="Update Database"
+                Clicked="Button_Clicked" />
+        <Button Text="Delete Database"
+                Clicked="Button_Clicked_1" />
+        <Button Text="Get Subscribed"
+                Clicked="Button_Clicked_2" />
+        <Button Text="Get Not Subscribed"
+                Clicked="Button_Clicked_3" />
+        <CollectionView x:Name="collectionView" SelectionMode="Single" SelectionChanged="collectionView_SelectionChanged">
             <CollectionView.ItemTemplate>
                 <DataTemplate>
                     <StackLayout>
