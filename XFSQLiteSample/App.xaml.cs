@@ -25,6 +25,9 @@ namespace XFSQLiteSample
         {
             InitializeComponent();
 
+            // Initialize database before use
+            var database = Database;
+
             MainPage = new MainPage();
         }
 
